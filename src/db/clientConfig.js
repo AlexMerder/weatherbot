@@ -19,14 +19,8 @@ async function createTable() {
 
     await client.query(createTableQuery);
     console.log("Table 'users' created successfully!");
-
-    await client.end();
 }
 
 createTable();
-
-client.connect()
-    .then(() => console.log('Connected to PSQL'))
-    .catch(err => console.error('Connection error', err.stack));
 
 module.exports = {client};

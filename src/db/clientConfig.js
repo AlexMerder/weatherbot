@@ -11,7 +11,7 @@ async function createTable() {
     await client.connect();
 
     const createTableQuery = `
-        CREATE TABLE IF NOT EXISTS users (
+        CREATE TABLE users (
             chat_id bigint PRIMARY KEY,
             state integer
         );

@@ -20,7 +20,5 @@ async function createTable() {
     await client.query(createTableQuery);
     console.log("Table 'users' created successfully!");
 }
-
 createTable();
-
 module.exports = {client};
